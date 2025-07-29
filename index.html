@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valmoris Dominion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <img src="/logo2.png" alt="Valmoris Logo" class="logo" />
+    <h1>⚔️ Valmoris Dominion ⚔️</h1>
+    <p class="subtitle">Minecraft Survival RPG Server • Lore • PvE • Quest</p>
+
+    <div class="ip-box">
+      <p><strong>IP Server:</strong> <span id="ip">valmoris.my.id</span></p>
+      <p><strong>Port:</strong> <span id="port">25412</span></p>
+      <button onclick="copyInfo()">📋 Salin IP & Port</button>
+    </div>
+
+    <a href="https://discord.com/invite/VvgeYUxXHp" target="_blank" class="discord-btn">🔗 Join Discord Community</a>
+  </header>
+
+  <main>
+    <section class="lore">
+      <h2>📜 Sejarah Valmoris</h2>
+      <p>
+        Di benua tersembunyi bernama Valmoris, sebuah kerajaan kuno berdiri di atas reruntuhan dunia lama.
+        Dikuasai oleh ras-ras kuat dan penuh sihir, tanah ini menjadi saksi peperangan antar bangsa dan lahirnya pahlawan-pahlawan legendaris.
+        Valmoris Dominion dibentuk oleh para penjaga alam demi menjaga keseimbangan dunia dari kegelapan yang merayap.
+      </p>
+      <p>
+        Kini, giliranmu untuk melanjutkan cerita. Bergabunglah sebagai petualang, pebisnis, penjaga hutan, atau penjelajah bawah tanah.
+        Takdir dunia ini ada di tanganmu.
+      </p>
+    </section>
+
+    <section class="features">
+      <h2>✨ Fitur Unggulan Server</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>🗺️ Dunia Tanpa Reset</h3>
+          <p>Jelajahi dunia yang terus berkembang tanpa takut kehilangan progresmu. Kami tidak akan mereset world!</p>
+        </div>
+        <div class="feature-card">
+          <h3>🧭 Quest dan Storyline</h3>
+          <p>Nikmati quest harian, mingguan, dan alur cerita original dengan karakter NPC dan lore unik.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🏹 PvE yang Menantang</h3>
+          <p>Dari dungeon hingga boss battle, siapkan gear terbaikmu dan hadapi ancaman dunia Valmoris!</p>
+        </div>
+        <div class="feature-card">
+          <h3>💰 Sistem Ekonomi Pemain</h3>
+          <p>Perdagangkan item, buka toko pribadi, hingga menjadi milyarder dalam dunia server kami.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🛡️ Anti-Cheat dan Fairplay</h3>
+          <p>Didukung sistem keamanan canggih dan staff aktif yang menjaga keadilan dan kenyamanan semua pemain.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🎭 Komunitas Aktif</h3>
+          <p>Forum diskusi, event mingguan, giveaway, hingga roleplay tersedia di komunitas Discord kami!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Valmoris Dominion • All rights reserved</p>
+    <p>Discord Server: <a href="https://discord.com/invite/VvgeYUxXHp" target="_blank" class="discord-footer-btn">
+    🎧 Masuk ke Discord Kami
+  </a></p>
+  </footer>
+
+  <script>
+    function copyInfo() {
+      const text = "valmoris.my.id:25412";
+      navigator.clipboard.writeText(text).then(() => {
+        alert("IP & Port berhasil disalin: " + text);
+      });
+    }
+  </script>
+</body>
+</html>
